@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Tourism Attractions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #2d5a3d;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff6b35;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background: #fff;
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1a472a;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-color: #ff6b35;
+        }
+
+        .card h3 {
+            color: #2d5a3d;
+            margin-bottom: 12px;
+            font-size: 1.4em;
+        }
+
+        .card p {
+            color: #555;
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tips-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .tips-list li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-left: 4px solid #ff6b35;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .tips-list li:hover {
+            background: #fff;
+        }
+
+        .tips-list li strong {
+            color: #1a472a;
+        }
+
+        footer {
+            background-color: #1a472a;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌍 Kenya Tourism Attractions</h1>
+        <p>Discover the Beauty and Culture of Kenya</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#national-parks">National Parks</a></li>
+            <li><a href="#wildlife">Wildlife</a></li>
+            <li><a href="#cities">Cities</a></li>
+            <li><a href="#foods">Foods</a></li>
+            <li><a href="#tips">Travel Tips</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- National Parks Section -->
+        <section id="national-parks">
+            <h2>🏞️ National Parks</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">🦁</div>
+                    <h3>Masai Mara National Reserve</h3>
+                    <p>One of the world's most famous wildlife reserves, known for the great wildebeest migration and abundant big five animals.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🏔️</div>
+                    <h3>Mount Kenya National Park</h3>
+                    <p>Africa's second-highest mountain offering stunning views, trekking trails, and diverse ecosystems from forest to alpine meadows.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🏜️</div>
+                    <h3>Amboseli National Park</h3>
+                    <p>Famous for views of Mount Kilimanjaro and large elephant herds. A photographer's paradise with stunning landscapes.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦒</div>
+                    <h3>Tsavo National Parks</h3>
+                    <p>One of the largest parks in the world, home to diverse wildlife including the famous red elephants and lions.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦓</div>
+                    <h3>Nakuru National Park</h3>
+                    <p>Known for thousands of flamingos, rhinos, and excellent bird watching opportunities along Lake Nakuru.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🌊</div>
+                    <h3>Lake Turkana National Parks</h3>
+                    <p>UNESCO World Heritage Site famous for paleontological discoveries and unique desert landscape with alkaline waters.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wildlife Section -->
+        <section id="wildlife">
+            <h2>🦁 Wildlife</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">🦁</div>
+                    <h3>The Big Five</h3>
+                    <p>Lion, Elephant, Buffalo, Leopard, and Rhinoceros - the most sought-after animals for safari enthusiasts.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦒</div>
+                    <h3>Giraffes</h3>
+                    <p>Towering graceful creatures found across Kenya's savannas, including the endangered Rothschild's giraffe.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦓</div>
+                    <h3>Zebras</h3>
+                    <p>Iconic striped animals commonly seen during the great migration in the Masai Mara.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦬</div>
+                    <h3>Wildebeest</h3>
+                    <p>Over a million wildebeest migrate annually through Kenya and Tanzania in a spectacular natural event.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦛</div>
+                    <h3>Hippos & Crocodiles</h3>
+                    <p>Found in Kenya's water systems, these powerful creatures offer exciting viewing opportunities.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦅</div>
+                    <h3>Bird Watching</h3>
+                    <p>Over 1,000 bird species make Kenya a paradise for ornithologists and bird enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cities Section -->
+        <section id="cities">
+            <h2>🏙️ Major Cities</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">🌆</div>
+                    <h3>Nairobi</h3>
+                    <p>Kenya's capital city, a vibrant metropolis with museums, markets, restaurants, and modern amenities. Home to the Nairobi National Park.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🏖️</div>
+                    <h3>Mombasa</h3>
+                    <p>Coastal paradise with beautiful beaches, historical sites like Fort Jesus, and water sports. Gateway to island getaways.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🌴</div>
+                    <h3>Diani Beach</h3>
+                    <p>Stunning white sandy beach, perfect for swimming, snorkeling, and diving with crystal-clear Indian Ocean waters.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🚂</div>
+                    <h3>Kisumu</h3>
+                    <p>Lake Victoria port city with rich cultural heritage, museums, and water activities on East Africa's largest lake.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🏔️</div>
+                    <h3>Kericho</h3>
+                    <p>Tea growing region in the highlands known for scenic landscapes, tea farms, and cool climate.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🎪</div>
+                    <h3>Nakuru</h3>
+                    <p>Gateway city near Lake Nakuru, known for vibrant markets, hotels, and proximity to wildlife reserves.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Foods Section -->
+        <section id="foods">
+            <h2>🍽️ Traditional Kenyan Foods</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">🍚</div>
+                    <h3>Ugali</h3>
+                    <p>Staple cornmeal dish, served with vegetables or meat. A fundamental part of Kenyan cuisine for centuries.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🍲</div>
+                    <h3>Sukuma Wiki</h3>
+                    <p>Sautéed collard greens with onions and tomatoes. Affordable, nutritious, and delicious vegetable dish.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🍛</div>
+                    <h3>Nyama Choma</h3>
+                    <p>Grilled meat (beef, goat, or chicken) served with ugali and vegetables. A beloved social dining experience.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🍜</div>
+                    <h3>Irio</h3>
+                    <p>Mashed potatoes mixed with corn and peas, traditional among the Kikuyu people. Comfort food at its best.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🥘</div>
+                    <h3>Githeri</h3>
+                    <p>Boiled corn and beans mixture, often cooked with potatoes. Simple, filling, and economical meal.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🍛</div>
+                    <h3>Chapati</h3>
+                    <p>Fried flatbread, commonly served for breakfast or as a side. Influenced by Indian cuisine and now a Kenyan staple.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🍲</div>
+                    <h3>Matoke</h3>
+                    <p>Steamed or boiled green bananas with meat or vegetables. Popular in western Kenya.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🥛</div>
+                    <h3>Chai (Tea)</h3>
+                    <p>Strong black tea with milk and sugar, served hot. The national beverage enjoyed throughout the day.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🍲</div>
+                    <h3>Mandazi</h3>
+                    <p>Deep-fried pastry dough, sweet and fluffy. Popular breakfast or street snack often served with tea.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🦞</div>
+                    <h3>Coastal Seafood</h3>
+                    <p>Fresh fish, octopus, and prawns prepared various ways. Coastal cities offer amazing seafood delicacies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips Section -->
+        <section id="tips">
+            <h2>✈️ Travel Tips for Kenya</h2>
+            <ul class="tips-list">
+                <li>
+                    <strong>Best Time to Visit:</strong> June to October (dry season) for the best wildlife viewing and Great Migration in the Masai Mara.
+                </li>
+                <li>
+                    <strong>Visa Requirements:</strong> Most visitors need a valid passport (6+ months validity). Many nationalities can obtain e-visas online through the Kenyan immigration website.
+                </li>
+                <li>
+                    <strong>Currency:</strong> Kenyan Shilling (KES). ATMs are readily available in cities. US dollars are widely accepted, especially in tourist areas.
+                </li>
+                <li>
+                    <strong>Language:</strong> English and Swahili are official languages. English is widely spoken in tourist areas, though learning basic Swahili phrases is appreciated.
+                </li>
+                <li>
+                    <strong>Vaccinations:</strong> Yellow fever vaccination is required for entry. Consult your doctor about malaria prophylaxis, especially for lower-altitude areas.
+                </li>
+                <li>
+                    <strong>Transportation:</strong> Internal flights connect major cities. Long-distance buses are affordable. Car rentals with drivers are recommended for safari and rural areas.
+                </li>
+                <li>
+                    <strong>Safari Tips:</strong> Book accommodations and safaris in advance during peak season. Early morning and late afternoon offer the best wildlife viewing opportunities.
+                </li>
+                <li>
+                    <strong>Safety:</strong> Avoid walking alone at night in cities. Use registered taxis or hotel services. Avoid displaying expensive items. Most tourist areas are safe.
+                </li>
+                <li>
+                    <strong>Climate:</strong> Kenya has a tropical and subtropical climate. Pack light, breathable clothing for hot areas. Bring a jacket for cooler highlands and evenings.
+                </li>
+                <li>
+                    <strong>Water & Food:</strong> Drink bottled or purified water. Eat cooked foods from reputable establishments. Street food is generally safe but use common sense.
+                </li>
+                <li>
+                    <strong>Accommodation:</strong> Options range from luxury lodges to budget hostels. Book in advance, especially during peak seasons (June-October, December-January).
+                </li>
+                <li>
+                    <strong>Respect & Culture:</strong> Ask permission before photographing people. Dress modestly in rural areas. Learn about local customs and traditions to enhance your experience.
+                </li>
+                <li>
+                    <strong>Internet & Communication:</strong> Mobile networks (Safaricom, Airtel, Idea) have good coverage. Local SIM cards are affordable and offer data packages.
+                </li>
+                <li>
+                    <strong>Photography:</strong> Kenya offers incredible photo opportunities. Always respect wildlife and get appropriate permits for professional photography in national parks.
+                </li>
+                <li>
+                    <strong>Budget:</strong> Kenya offers good value for money. Budget accommodations: $10-30/night. Mid-range: $50-150/night. Luxury: $200+/night. Safari costs vary based on park and season.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kenya Tourism Guide. All rights reserved.</p>
+        <p>Discover the magic of Kenya - Where wildlife meets culture and adventure awaits!</p>
+        <p>For more information, visit <a href="https://www.tourism.go.ke/" target="_blank">Kenya Tourism Board</a></p>
+    </footer>
+</body>
+</html>
